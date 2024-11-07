@@ -1,0 +1,123 @@
+<div class="parallax img-first init">
+  <div class="logo space-content">
+    <img src="../assets/imgs/logo_erixcel.jpg" alt="" width="200" height="200">
+  </div>
+  <div class="shadow-bottom"></div>
+</div>
+<nav class="nav small-border">
+  <div class="nav-content space-content">
+    <a class="btn-menu" (click)="isVisibleNav = !isVisibleNav">
+      @if (isVisibleNav) {
+        <svg class="icon icon-close" aria-hidden="true" role="img"> <use href="#icon-close" xlink:href="#icon-close"></use></svg>
+      } @else {
+        <svg class="icon icon-bars" aria-hidden="true" role="img"> <use href="#icon-bars" xlink:href="#icon-bars"></use></svg>
+      }
+      Menú
+    </a>
+    @if (isVisibleNav || isScreenPhone) {
+      <div>
+        <a (click)="goingTo('home')">Inicio</a>
+        <a (click)="goingTo('mission')">Mision</a>
+        <a (click)="goingTo('history')">Historia</a>
+        <a (click)="goingTo('contact')">Contacto</a>
+      </div>
+    }
+    <a (click)="goingTo('footer')">
+      <svg class="icon down icon-arrow-right" aria-hidden="true" role="img">
+        <use href="#icon-arrow-right" xlink:href="#icon-arrow-right"></use>
+      </svg>
+    </a>
+  </div>
+</nav>
+<div class="info" id="home">
+  <div class="info-content space-content">
+    <div>
+      <h2>Erixcel Software Development</h2>
+      <p>Fundada en Villa El Salvador, Erixcel Software Development se dedica a brindar soluciones innovadoras y efectivas que ayudan a sus clientes a alcanzar sus objetivos de forma rápida y precisa. Con un equipo especializado en el desarrollo de software, nuestra misión es mejorar la eficiencia y productividad de cada proyecto en el que participamos, adaptándonos a las necesidades únicas de cada cliente.</p>
+    </div>
+  </div>
+</div>
+<div class="parallax img-second">
+  <div class="shadow-bottom"></div>
+</div>
+<div class="info" id="mission">
+  <div class="info-content space-content">
+    <div>
+      <h2>Misión</h2>
+      <p>En Erixcel Software Development, nuestro propósito es ser un aliado estratégico para nuestros clientes, brindándoles soluciones tecnológicas ágiles que potencien sus capacidades para afrontar los desafíos actuales. Nos enfocamos en entregar resultados concretos que impacten de manera positiva en su crecimiento, optimizando procesos y elevando la calidad de sus operaciones mediante herramientas digitales innovadoras.</p>
+    </div>
+  </div>
+</div>
+<div class="parallax img-third">
+  <div class="shadow-bottom"></div>
+</div>
+<div class="info" id="history">
+  <div class="info-content space-content">
+    <div>
+      <h2>Historia</h2>
+      <p>Fundada el 22 de octubre de 2020 en Villa El Salvador, Erixcel Software Development nació con una visión clara: transformar la tecnología en una herramienta accesible y potente para empresas de todos los tamaños. Desde sus primeros días, Erixcel se ha comprometido a ofrecer soluciones tecnológicas personalizadas que permitan a sus clientes alcanzar sus objetivos de forma rápida y eficaz.</p>
+      <p>A lo largo de estos años, Erixcel ha crecido de un pequeño equipo de desarrolladores apasionados a una sólida compañía con expertos en distintas áreas del desarrollo de software y la gestión de proyectos. Con cada proyecto, hemos perfeccionado nuestras metodologías de trabajo, centrando nuestra atención en la eficiencia, la transparencia y la calidad. Nuestra sede en Villa El Salvador se ha convertido en un centro de innovación, desde el cual lanzamos iniciativas que abordan las necesidades cambiantes de nuestros clientes y el mercado.</p>
+      <p>Actualmente, Erixcel es reconocida por su capacidad para adaptarse rápidamente a las demandas del entorno tecnológico y por brindar soluciones que generan resultados visibles. Nos enorgullecemos de nuestros valores de integridad, dedicación y creatividad, los cuales son fundamentales en cada colaboración y proyecto.</p>
+    </div>
+  </div>
+</div>
+<div class="info small-border" id="contact">
+  <div class="info-content space-content">
+    <div>
+      <h2>Contacto</h2>
+      <p><strong>Telf. / WhatsApp:</strong> +51 918 708 985</p>
+      <p><strong>Facebook:</strong> /erixcel</p>
+      <p><strong>Instagram:</strong> {{'@erixcel'}}</p>
+      <p><strong>TikTok: </strong> {{'@erixcel'}}</p>
+    </div>
+  </div>
+</div>
+<footer class="footer" id="footer">
+  <div class="footer-content space-content">
+    <div class="location">
+      <section>
+        <h2 class="widget-title">Encuéntranos</h2>
+        <div>
+          <p>
+            <strong>Horario de atención</strong><br>
+            Lunes a viernes: de 9:00 a 19:00 h.<br>
+            Sábado y domingo: de 9:00 a 13:00 h.
+          </p>
+          <p>Lima - Perú</p>
+        </div>
+      </section>
+    </div>
+    <div class="searcher">
+      <img src="../assets/imgs/logo_erixcel.jpg" alt="" width="150" height="150">
+      <form>
+        <input id="search_id" type="search" placeholder="Buscar …">
+        <button type="submit">
+          <svg class="icon icon-search" aria-hidden="true" role="img"><use href="#icon-search" xlink:href="#icon-search"></use></svg>
+        </button>
+      </form>
+    </div>
+    <div class="social-network">
+      <a target="_blank" href="https://www.facebook.com/erixcel">
+        <svg class="icon icon-facebook" aria-hidden="true" role="img"> <use href="#icon-facebook" xlink:href="#icon-facebook"></use></svg>
+      </a>
+      <a target="_blank" href="https://twitter.com/erixcel">
+        <svg class="icon icon-twitter" aria-hidden="true" role="img"> <use href="#icon-twitter" xlink:href="#icon-twitter"></use> </svg>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/erixcel">
+        <svg class="icon icon-instagram" aria-hidden="true" role="img"> <use href="#icon-instagram" xlink:href="#icon-instagram"></use> </svg>
+      </a>
+      <a target="_blank" href="mailto:informes@erixcel.com">
+        <svg class="icon icon-envelope-o" aria-hidden="true" role="img"> <use href="#icon-envelope-o" xlink:href="#icon-envelope-o"></use> </svg>
+      </a>
+    </div>
+    <div class="credits">
+      <a href="">{{'Funciona gracias a erixcel'}}</a>
+    </div>
+  </div>
+</footer>
+<script>
+  function scrollToContent() {
+    const contentDiv = document.getElementById('content');
+    contentDiv.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
