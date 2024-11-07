@@ -1,5 +1,5 @@
 {
-  "name": "proyecto-arte",
+  "name": "erixcel-software-development",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:proyecto-arte": "node dist/proyecto-arte/server/server.mjs"
+    "serve:ssr:erixcel-software-development": "node dist/erixcel-software-development/server/server.mjs"
   },
   "private": true,
   "dependencies": {
